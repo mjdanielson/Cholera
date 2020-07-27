@@ -20,6 +20,19 @@
         width: 100%;
       }
 
+      #overlay {
+        position: absolute;
+        right: 0;
+        background: rgba(255, 255, 255, 0.7);
+        margin: 20px;
+        padding: 10px;
+        font-family: Courier, sans-serif;
+        overflow: auto;
+        border-radius: 3px;
+        top: 0;
+  
+      }
+
       h2,
       h3 {
         margin: 10px;
@@ -56,15 +69,16 @@
       .mapboxgl-popup-content-wrapper {
         padding: 2%;
       }
-
+  
     </style>
   </head>
 
   <body>
     <div id='map'></div>
+    <div id='overlay'>Broad Street, 1854 <br> Cholera Outbreak</div>
 
     <script>
-      mapboxgl.accessToken = 'pk.eyJ1IjoibWpkYW5pZWxzb24iLCJhIjoiY2tkNHd0dDM0MWx6ZTJ4cXZrcHdya21vZSJ9.sbow5cLUlk_LcmLXlCk_NQ';
+      mapboxgl.accessToken = 'pk.eyJ1IjoibWpkYW5pZWxzb24iLCJhIjoiY2s5bTJodXluMHVhYTNybWk1eTMxN2lidiJ9.DU-KkKoefUHAlSidTjqsiQ';
       var map = new mapboxgl.Map({
         container: 'map', // container id
         style: 'mapbox://styles/mjdanielson/ck06xrvod2skg1crnkksideyv', // replace this with your style URL
